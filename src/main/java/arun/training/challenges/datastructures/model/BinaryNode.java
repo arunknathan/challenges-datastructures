@@ -30,4 +30,9 @@ public class BinaryNode {
 		this.right = right;
 	}
 
+	@Override
+	public String toString() {
+		return "{data:" + data + ",left:" + left + ",right:" + right + "}";
+	}
+
 }

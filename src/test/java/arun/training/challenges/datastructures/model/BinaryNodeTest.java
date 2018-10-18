@@ -11,7 +11,7 @@ public class BinaryNodeTest {
 		BinaryNode node = new BinaryNode(data);
 		Assert.assertEquals(node.getData(), data);
 	}
-	
+
 	@Test
 	public void testLeft() {
 		BinaryNode node = new BinaryNode(1);
@@ -20,7 +20,7 @@ public class BinaryNodeTest {
 		node.setLeft(left);
 		Assert.assertEquals(node.getLeft().getData(), data);
 	}
-	
+
 	@Test
 	public void testRight() {
 		BinaryNode node = new BinaryNode(1);
@@ -28,5 +28,11 @@ public class BinaryNodeTest {
 		BinaryNode right = new BinaryNode(data);
 		node.setRight(right);
 		Assert.assertEquals(node.getRight().getData(), data);
+	}
+
+	@Test
+	public void testToString() {
+		BinaryNode node = new BinaryNode(1);
+		Assert.assertEquals(node.toString(), "{data:1,left:null,right:null}");
 	}
 }
